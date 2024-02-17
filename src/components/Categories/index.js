@@ -7,13 +7,14 @@ import ReactContext from '../../context/reactContext';
 import {FaSpinner}from 'react-icons/fa'
 
 const subCategoryIcons = [
-    {icon: "https://res.cloudinary.com/dniq4wbom/image/upload/v1708116489/Group_475_tzgsz1.png", name: 'All Bags'},
-    {icon: "https://res.cloudinary.com/dniq4wbom/image/upload/v1708116484/Group_307_qng0ml.png", name: 'VanityPouch'},
-    {icon: "https://res.cloudinary.com/dniq4wbom/image/upload/v1708116478/Group_300_hg9jm2.png", name: 'ToteBag'},
-    {icon: "https://res.cloudinary.com/dniq4wbom/image/upload/v1708116478/Group_300_hg9jm2.png", name: 'DuffeleBag'},
-    {icon: "https://res.cloudinary.com/dniq4wbom/image/upload/v1708116462/Group_303_twgtcy.png", name: 'LaptopSleeve'},
-    {icon: "https://res.cloudinary.com/dniq4wbom/image/upload/v1708116469/Group_302_e2avtv.png", name: 'MessengerBag'},
-    {icon: "https://res.cloudinary.com/dniq4wbom/image/upload/v1708116450/Group_304_zbtrxu.png", name: 'SlingsBag'},
+    {icon: "https://res.cloudinary.com/dxpbbqji6/image/upload/v1708199931/All-Bags_lty2do.png", name: 'All Bags'},
+    {icon: "https://res.cloudinary.com/dxpbbqji6/image/upload/v1708199932/Vanity-Pouch_d7wzot.png", name: 'VanityPouch'},
+    {icon: "https://res.cloudinary.com/dxpbbqji6/image/upload/v1708199932/Messenger-Bags_seqdve.png", name: 'ToteBag'},
+    {icon: "https://res.cloudinary.com/dxpbbqji6/image/upload/v1708199932/Tote-Bag_hmpnqa.png", name: 'DuffeleBag'},
+    {icon: "https://res.cloudinary.com/dxpbbqji6/image/upload/v1708199931/Laptop-Sleeve_xhbesu.png", name: 'LaptopSleeve'},
+    {icon: "https://res.cloudinary.com/dxpbbqji6/image/upload/v1708199932/Slings-Bag_bxyc0o.png", name: 'MessengerBag'},
+    {icon: "https://res.cloudinary.com/dxpbbqji6/image/upload/v1708199931/Duffele-Bag_f5r95m.png", name: 'SlingsBag'},
+    {icon: "https://res.cloudinary.com/dxpbbqji6/image/upload/v1708199931/Hand-Bag_g2kwff.png", name: 'HandBag'},
 ]
 
 const Categories = () => {

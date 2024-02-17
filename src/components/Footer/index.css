@@ -1,0 +1,46 @@
+.footer-container{
+    background-color: black;
+    color: lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+.heading{
+    font-size: 22px;
+    font-family: 700;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-item{
+    background-color: lightslategray;
+    border-radius: 10px;
+    margin: 10px;
+    color: white;
+}
+.input-email,.input-number{
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 200px;
+    background-color: lightslategray;
+    color: white;
+    border: none;
+}
+.labels{
+    padding: 10px;
+}
+.submit-btn{
+    padding: 10px;
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+.icons{
+    height: 40px;
+    width: 40px;
+    margin: 15px;
+}

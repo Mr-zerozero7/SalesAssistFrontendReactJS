@@ -8,6 +8,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
+    overflow: auto;
 }
 .category-link,.sub-cat-list{
     text-decoration: none;
@@ -24,6 +25,8 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 10px;
+    overflow: auto;
 }
 .sub-cat-icon{
     width: 60px;

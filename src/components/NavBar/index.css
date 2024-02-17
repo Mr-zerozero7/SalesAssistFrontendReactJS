@@ -20,6 +20,7 @@
     flex-direction: row;
     justify-content: space-around;
     list-style: none;
+    padding-right: 20px;
 }
 .brand-name-link,.menu-item-link{
     text-decoration: none;
