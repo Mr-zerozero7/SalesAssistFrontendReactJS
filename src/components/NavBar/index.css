@@ -1,0 +1,29 @@
+.navbar-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: lightgray;
+    height: 50px;
+    width: 100vw;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.brand-name{
+    letter-spacing: 6px;
+    padding: 20px;
+    color: lightgray;
+}
+.menu-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+.brand-name-link,.menu-item-link{
+    text-decoration: none;
+}
+.menu-icons{
+    margin: 10px;
+}
