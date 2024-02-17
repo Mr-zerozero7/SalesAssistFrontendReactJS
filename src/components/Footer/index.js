@@ -1,6 +1,8 @@
 import './index.css'
+//  icons
 import {FaLinkedin, FaInstagram,FaTwitter,FaYoutube} from 'react-icons/fa'
 
+// Footer Company Details, Features, Contact From & Social Tabs
 const Footer = () => {
     return(
         <div className='footer-container'>
@@ -39,7 +41,7 @@ const Footer = () => {
                         <button type='button' className='submit-btn'>Submit</button>
                     </div>
                 </form>
-                <div className='scoial-container'>
+                <div className='social-container'>
                     <FaLinkedin className='icons'/>
                     <FaInstagram className='icons'/>
                     <FaTwitter className='icons'/>

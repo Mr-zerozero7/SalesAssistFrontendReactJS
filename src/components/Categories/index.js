@@ -1,11 +1,14 @@
 // import { Link } from 'react-router-dom'
 import './index.css'
 
+// importing unique id generator
 import {v4} from 'uuid';
+// importing useContext & ReactContext 
 import { useContext } from 'react';
 import ReactContext from '../../context/reactContext';
 import {FaSpinner}from 'react-icons/fa'
 
+// created sub-category icons
 const subCategoryIcons = [
     {icon: "https://res.cloudinary.com/dxpbbqji6/image/upload/v1708199931/All-Bags_lty2do.png", name: 'All Bags'},
     {icon: "https://res.cloudinary.com/dxpbbqji6/image/upload/v1708199932/Vanity-Pouch_d7wzot.png", name: 'VanityPouch'},
@@ -20,7 +23,8 @@ const subCategoryIcons = [
 const Categories = () => {
     const { apiStatus, data, categoryName,setCategoryName} = useContext(ReactContext)
 
-    console.log(data)
+    // console.log(data)
+    // creating category names list by using forEach from the data
     let categoryList= []
     data.forEach((eachCat) => {
         const name = eachCat.category[0].toUpperCase() + eachCat.category.slice(1);
@@ -29,13 +33,14 @@ const Categories = () => {
         }
     })
 
+    // Loading Spinner
     const loadingView = () => {
         return(
             <FaSpinner icon='fa fa-FaSpinner' style={{color:'lightgray'}} />
         )
     }
 
-    
+    // creating Category Tabs & Sub-Category Icon Buttons
     return(
         <div className='category-container'>
             {apiStatus === 'IN_PROGRESS' ? 

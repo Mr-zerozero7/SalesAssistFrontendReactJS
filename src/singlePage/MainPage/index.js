@@ -1,14 +1,16 @@
 import './index.css'
 
+// importing useState and useEffect
 import { useEffect, useState } from 'react'
 
+// Components
 import Categories from '../../components/Categories'
 import Products from '../../components/Products'
-// import NavBar from '../../components/NavBar'
-// import Footer from '../../components/Footer'
 
+// importing Global Context
 import ReactContext from '../../context/reactContext'
 
+// initializing API Status
 const apiStatusObject = {
     initial: 'INITIAL',
     progress: 'IN_PROGRESS',
@@ -22,6 +24,7 @@ const MainPage = () => {
     const [apiStatus, setApiStatus] = useState(apiStatusObject.initial)
     const [fetchError, setFetchError] = useState('')
 
+    // product data fetching from third-party API
     const fetchData = async() => {
         try {
             setApiStatus(apiStatusObject.progress)
@@ -42,6 +45,7 @@ const MainPage = () => {
         }
     }
 
+    // calling fetch
     useEffect(() => {
       fetchData();
      
@@ -49,6 +53,7 @@ const MainPage = () => {
     
 //  eslint-disable-next-line
 
+    //  exporting data and elements to Categories & Prosucts Page
     return(
         <ReactContext.Provider value={{apiStatus, data, categoryName, setCategoryName, fetchData, fetchError}}>
             <div className='home-container'>

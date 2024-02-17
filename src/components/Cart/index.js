@@ -1,6 +1,6 @@
 import './index.css'
 
-
+// Cart Page
 const Cart = () =>{
     
     return(
