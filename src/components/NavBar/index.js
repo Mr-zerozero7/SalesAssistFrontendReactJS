@@ -1,6 +1,9 @@
 import './index.css'
+
+//  Redirecting pages by Menu Click
 import { Link } from 'react-router-dom'
-import React from 'react'
+
+// importing React - icons 
 import {FaSearch,FaUser,FaShoppingBag,FaRegBookmark} from 'react-icons/fa'
 
 const NavBar = () => {
