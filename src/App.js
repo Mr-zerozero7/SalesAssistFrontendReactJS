@@ -1,29 +1,25 @@
 // import logo from './logo.svg';
 import './App.css';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import React from 'react';
 import NavBar from './components/NavBar'
-import Home from './components/Home'
-import Categories from './components/Categories'
-import Products from './components/Products'
-import ProductCards from './components/ProductCards'
+import Cart from './components/Cart'
 import Footer from './components/Footer'
 
-function App() {
+import MainPage from './singlePage/MainPage'
+
+function App(){
   return (
     <>
-    <Router>
-      <NavBar/>
-      <Routes>
-        <Route eaxt path='/' element={<Home/>}/>
-        <Route eaxt path='/categories' element={<Categories/>}/>
-        <Route eaxt path='/products' element={<Products/>}/>
-        <Route eaxt path='/product-cards/:id' element={<ProductCards/>}/>
-      </Routes>
-      <Footer/>
-    </Router>
+      <Router>
+        <NavBar/>
+        <Routes>
+          <Route exact path='/cart' element={<Cart/>}/>
+          <Route exact path='/' element={<MainPage/>}/> 
+        </Routes>
+        <Footer/>
+      </Router>
     </>
   );
-}
+  }
 
 export default App;
